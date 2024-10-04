@@ -16,6 +16,7 @@ func main(){
 		Addr:":8080",
 	}
 	fmt.Println("Server is listening on port :8080")
+	
 	err:=server.ListenAndServe()
 	if err != nil && err != http.ErrServerClosed {
 		fmt.Printf("Server error: %s\n",err)
